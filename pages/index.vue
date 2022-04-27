@@ -11,7 +11,7 @@
     <v-stack>
       <v-stack v-if="isNoBGMode">
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-red-600">
+          <div class="font-bold md:text-5xl text-4xl text-red-600">
             <div v-if="poem.first.length>0" class="m-1">
               {{ poem.first }}
             </div>
@@ -20,7 +20,7 @@
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-blue-800">
+          <div class="font-bold md:text-5xl text-4xl text-blue-800">
             <div v-if="poem.second.length > 0" class="m-1">
               {{ poem.second }}，
             </div>
@@ -29,7 +29,7 @@
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-red-600">
+          <div class="font-bold md:text-5xl text-4xl text-red-600">
             <div v-if="poem.third.length>0" class="m-1">
               {{ poem.third }}，
             </div>
@@ -38,7 +38,7 @@
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-blue-800">
+          <div class="font-bold md:text-5xl text-4xl text-blue-800">
             <div v-if="poem.fourth.length>0" class="m-1">
               {{ poem.fourth }}
             </div>
@@ -47,7 +47,7 @@
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-red-600">
+          <div class="font-bold md:text-5xl text-4xl text-red-600">
             <div v-if="poem.fifth.length>0" class="m-1">
               {{ poem.fifth }}
             </div>
@@ -67,7 +67,7 @@
 
       <v-stack v-if="!isNoBGMode">
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-white bg-red-600">
+          <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
             <div v-if="poem.first.length>0" class="m-1">
               {{ poem.first }}
             </div>
@@ -76,7 +76,7 @@
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-white bg-blue-800">
+          <div class="font-bold md:text-5xl text-4xl text-white bg-blue-800">
             <div v-if="poem.second.length>0" class="m-1">
               {{ poem.second }}，
             </div>
@@ -85,7 +85,7 @@
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-white bg-red-600">
+          <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
             <div v-if="poem.third.length>0" class="m-1">
               {{ poem.third }}，
             </div>
@@ -94,7 +94,7 @@
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-white bg-blue-800">
+          <div class="font-bold md:text-5xl text-4xl text-white bg-blue-800">
             <div v-if="poem.fourth.length>0" class="m-1">
               {{ poem.fourth }}
             </div>
@@ -103,7 +103,7 @@
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
-          <div class="font-bold text-5xl text-white bg-red-600">
+          <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
             <div v-if="poem.fifth.length>0" class="m-1">
               {{ poem.fifth }}
             </div>
@@ -215,9 +215,9 @@
       相遇。
     </div>
 
-    <stack class="flex-row md:flex-col p-4">
-
-    </stack>
+    <v-stack>
+    <a href="https://github.com/TakiVotoid/65472-Generator"> Github </a>
+    </v-stack>
   </v-stack>
 </template>
 
