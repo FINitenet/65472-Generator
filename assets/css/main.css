@@ -1,0 +1,20 @@
+.main_frame {
+  margin: 80px 30px 30px 15px;
+}
+
+@font-face {
+  font-family: fzzs;
+  src: url("../fonts/FZSSJW.ttf");
+}
+
+.chinese-font {
+  font-family: fzzs, serif;
+}
+
+.horizontal-divider-size {
+  width: 1px;
+}
+
+.vertical-divider-size {
+  height: 0.5px;
+}
