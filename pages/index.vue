@@ -12,52 +12,52 @@
       <v-stack v-if="isNoBGMode">
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-red-600">
-            <div v-if="poem.first.length>0" class="m-1">
+            <div v-if="poem.first.length>0" class="md:m-1 m-0.5">
               {{ poem.first }}
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-blue-800">
-            <div v-if="poem.second.length > 0" class="m-1">
+            <div v-if="poem.second.length > 0" class="md:m-1 m-0.5">
               {{ poem.second }}，
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-red-600">
-            <div v-if="poem.third.length>0" class="m-1">
+            <div v-if="poem.third.length>0" class="md:m-1 m-0.5">
               {{ poem.third }}，
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-blue-800">
-            <div v-if="poem.fourth.length>0" class="m-1">
+            <div v-if="poem.fourth.length>0" class="md:m-1 m-0.5">
               {{ poem.fourth }}
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-red-600">
-            <div v-if="poem.fifth.length>0" class="m-1">
+            <div v-if="poem.fifth.length>0" class="md:m-1 m-0.5">
               {{ poem.fifth }}
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack v-if="poem.author.length>0" class="mb-1">
           <div class="font-bold text-md text-gray-700">
-            <div class="m-1">
+            <div class="md:m-1 m-0.5">
               @{{ poem.author }}
             </div>
           </div>
@@ -68,52 +68,52 @@
       <v-stack v-if="!isNoBGMode">
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
-            <div v-if="poem.first.length>0" class="m-1">
+            <div v-if="poem.first.length>0" class="md:m-1 m-0.5">
               {{ poem.first }}
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-white bg-blue-800">
-            <div v-if="poem.second.length>0" class="m-1">
+            <div v-if="poem.second.length>0" class="md:m-1 m-0.5">
               {{ poem.second }}，
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
-            <div v-if="poem.third.length>0" class="m-1">
+            <div v-if="poem.third.length>0" class="md:m-1 m-0.5">
               {{ poem.third }}，
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-white bg-blue-800">
-            <div v-if="poem.fourth.length>0" class="m-1">
+            <div v-if="poem.fourth.length>0" class="md:m-1 m-0.5">
               {{ poem.fourth }}
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
-            <div v-if="poem.fifth.length>0" class="m-1">
+            <div v-if="poem.fifth.length>0" class="md:m-1 m-0.5">
               {{ poem.fifth }}
             </div>
-            <div v-else class="m-1">&nbsp;</div>
+            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
           <spacer/>
         </h-stack>
         <h-stack v-if="poem.author.length>0" class="mb-1">
           <div class="font-bold text-md text-gray-700">
-            <div class="m-1">
+            <div class="md:m-1 m-0.5">
               @{{ poem.author }}
             </div>
           </div>
@@ -215,8 +215,10 @@
       相遇。
     </div>
 
+    <br/>
+
     <v-stack>
-    <a href="https://github.com/TakiVotoid/65472-Generator"> Github </a>
+    <a href="https://github.com/TakiVotoid/65472-Generator"> <div class="italic">Github Link</div></a>
     </v-stack>
   </v-stack>
 </template>
