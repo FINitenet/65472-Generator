@@ -204,9 +204,12 @@
       最近，有一种红蓝相间、错落有致的新诗。
     </div>
     <div class="chinese-font text-lg">
-      让感情在既有的结构里，最大限度地喷涌而出。
+      让感情在既定的结构里，最大限度地喷涌而出。
     </div>
     <br/>
+    <div class="chinese-font text-lg">
+      在上方作诗，然后截图分享给你的读者。
+    </div>
     <div class="chinese-font text-lg">
       我想和你一起在风雨中吟咏，然后在或许马上就要到来、或许在很久之后才会到来的阳光下——
     </div>
