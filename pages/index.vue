@@ -241,8 +241,8 @@ export default {
       isNoBGMode: false,
       poem: {
         first: "我会做梦的吧",
-        second: "在这个夜里，",
-        third: "黎明将至，",
+        second: "在这个夜里",
+        third: "黎明将至",
         fourth: "在城市边缘与你",
         fifth: "相遇",
         author: ""
