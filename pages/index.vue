@@ -22,7 +22,7 @@
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-blue-800">
             <div v-if="poem.second.length > 0" class="md:m-1 m-0.5">
-              {{ poem.second }}，
+              {{ poem.second }}
             </div>
             <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
@@ -31,7 +31,7 @@
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-red-600">
             <div v-if="poem.third.length>0" class="md:m-1 m-0.5">
-              {{ poem.third }}，
+              {{ poem.third }}
             </div>
             <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
@@ -78,7 +78,7 @@
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-white bg-blue-800">
             <div v-if="poem.second.length>0" class="md:m-1 m-0.5">
-              {{ poem.second }}，
+              {{ poem.second }}
             </div>
             <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
@@ -87,7 +87,7 @@
         <h-stack class="mb-1">
           <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
             <div v-if="poem.third.length>0" class="md:m-1 m-0.5">
-              {{ poem.third }}，
+              {{ poem.third }}
             </div>
             <div v-else class="md:m-1 m-0.5">&nbsp;</div>
           </div>
@@ -237,8 +237,8 @@ export default {
       isNoBGMode: false,
       poem: {
         first: "我会做梦的吧",
-        second: "在这个夜里",
-        third: "黎明将至",
+        second: "在这个夜里，",
+        third: "黎明将至，",
         fourth: "在城市边缘与你",
         fifth: "相遇",
         author: ""
