@@ -1,5 +1,8 @@
 # 65472-Generator
 
+## 部署的实例
+戳此处： [65472-Generator](https://65472.caniformia.link)
+
 ## 这是什么？
 帮助大家写 65472 韵文的生成器。
 

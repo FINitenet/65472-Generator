@@ -9,117 +9,9 @@
     <br/>
 
     <v-stack>
-      <v-stack v-if="isNoBGMode">
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-red-600">
-            <div v-if="poem.first.length>0" class="md:m-1 m-0.5">
-              {{ poem.first }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-blue-800">
-            <div v-if="poem.second.length > 0" class="md:m-1 m-0.5">
-              {{ poem.second }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-red-600">
-            <div v-if="poem.third.length>0" class="md:m-1 m-0.5">
-              {{ poem.third }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-blue-800">
-            <div v-if="poem.fourth.length>0" class="md:m-1 m-0.5">
-              {{ poem.fourth }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-red-600">
-            <div v-if="poem.fifth.length>0" class="md:m-1 m-0.5">
-              {{ poem.fifth }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack v-if="poem.author.length>0" class="mb-1">
-          <div class="font-bold text-md text-gray-700">
-            <div class="md:m-1 m-0.5">
-              @{{ poem.author }}
-            </div>
-          </div>
-          <spacer/>
-        </h-stack>
-      </v-stack>
+      <no-b-g-poem :poem="poem" v-if="isNoBGMode"/>
 
-      <v-stack v-if="!isNoBGMode">
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
-            <div v-if="poem.first.length>0" class="md:m-1 m-0.5">
-              {{ poem.first }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-white bg-blue-800">
-            <div v-if="poem.second.length>0" class="md:m-1 m-0.5">
-              {{ poem.second }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
-            <div v-if="poem.third.length>0" class="md:m-1 m-0.5">
-              {{ poem.third }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-white bg-blue-800">
-            <div v-if="poem.fourth.length>0" class="md:m-1 m-0.5">
-              {{ poem.fourth }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack class="mb-1">
-          <div class="font-bold md:text-5xl text-4xl text-white bg-red-600">
-            <div v-if="poem.fifth.length>0" class="md:m-1 m-0.5">
-              {{ poem.fifth }}
-            </div>
-            <div v-else class="md:m-1 m-0.5">&nbsp;</div>
-          </div>
-          <spacer/>
-        </h-stack>
-        <h-stack v-if="poem.author.length>0" class="mb-1">
-          <div class="font-bold text-md text-gray-700">
-            <div class="md:m-1 m-0.5">
-              @{{ poem.author }}
-            </div>
-          </div>
-          <spacer/>
-        </h-stack>
-      </v-stack>
+      <b-g-poem :poem="poem" v-if="!isNoBGMode" />
 
       <div class="mt-4">
         <label
@@ -233,9 +125,11 @@ import CustomInput from "../components/utilities/CustomInput";
 import Stack from "../components/utilities/layout/Stack";
 import VStack from "../components/utilities/layout/VStack";
 import Spacer from "../components/utilities/layout/Spacer";
+import BGPoem from "../components/BGPoem";
+import NoBGPoem from "../components/NoBGPoem";
 
 export default {
-  components: {Spacer, VStack, Stack, CustomInput, HStack},
+  components: {NoBGPoem, BGPoem, Spacer, VStack, Stack, CustomInput, HStack},
   data() {
     return {
       isNoBGMode: false,
